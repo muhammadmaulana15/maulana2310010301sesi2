@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Project - Final</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #9fe6fc, #9fe6fc);
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #0c9fcc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        article {
+            flex: 3;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        aside {
+            flex: 1;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        aside img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        /* Project Cards */
+        .project-card {
+            background: #8bffec;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h4 {
+            margin: 0 0 10px;
+        }
+
+        .project-card p {
+            margin: 0;
+        }
+
+        /* Social Links Styling */
+        aside .social-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            border-radius: 8px;
+            background: #d0f9ff;
+            width: 80%;
+        }
+
+        .social-link i {
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+        .social-link:hover {
+            transform: scale(1.05);
+            color: #fff;
+            background: #01274b;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Personal Web Project</h1>
+        <p>"Building creativity and functionality with modern web development"</p>
+        <nav>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <article>
+            <h2>Introduction</h2>
+            <p>
+                Welcome to my personal web project. This project demonstrates my skills in HTML, CSS, and JavaScript
+                while adhering to modern web standards. Below, you'll find details about me, my recent projects, and how
+                to get in touch.
+            </p>
+
+            <section id="about">
+                <h3>About Me</h3>
+                <p>
+                    My name is Muhammad Maulana, a passionate person and I love challenging myself with new things.
+                </p>
+                <ul>
+                    <li><strong>Specialization:</strong> Guitarist and vocalist</li>
+                    <li><strong>Skills:</strong> design and photography</li>
+                    <li><strong>Hobbies:</strong> Music, Photography, and Watching movies</li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h3>My Projects</h3>
+                <div class="project-card">
+                    <h4>Project 1: Weather App</h4>
+                    <p>
+                        A simple yet dynamic weather forecasting application built using HTML, CSS, and JavaScript with
+                        real-time API integration.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h4>Project 2: Online Store</h4>
+                    <p>
+                        An e-commerce prototype featuring a responsive design and CRUD functionality using PHP and
+                        MySQL.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h4>Project 3: Personal Portfolio</h4>
+                    <p>
+                        A clean and modern portfolio showcasing my professional journey and achievements.
+                    </p>
+                </div>
+            </section>
+        </article>
+
+        <aside>
+            <img src="assets/images/profile.jpg.jpg" alt="Profile Picture">
+            <h3>Quick Info</h3>
+            <p><strong>Full Name:</strong> Muhammad Maulana</p>
+            <p><strong>Email:</strong> maulana1510202@gmail.com</p>
+            <p><strong>Phone:</strong> +62 8575 4074 587</p>
+            <h4>Connect with Me</h4>
+            <div class="social-links">
+                <a href="https://linkedin.com" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://twitter.com" class="social-link">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Maulana. Designed with sincerity.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const projectCards = document.querySelectorAll(".project-card");
+
+            projectCards.forEach((card) => {
+                card.addEventListener("mouseenter", () => {
+                    card.style.transform = "scale(1.05)";
+                    card.style.transition = "transform 0.3s ease";
+                });
+                card.addEventListener("mouseleave", () => {
+                    card.style.transform = "scale(1)";
+                });
+            });
+
+            console.log("Interactive features added.");
+        });
+    </script>
+</body>
+
+</html>
